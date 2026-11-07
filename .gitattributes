@@ -1,0 +1,12 @@
+# Textdateien mit LF-Zeilenenden
+* text=auto eol=lf
+
+# Windows-Skripte mit CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binärdateien nicht konvertieren
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary

@@ -1,0 +1,23 @@
+{
+  "name": "vela",
+  "version": "0.1.0",
+  "description": "Ein Mini-Code-Editor auf Electron",
+  "main": "./out/main/index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck:node": "tsc --noEmit -p tsconfig.node.json --composite false",
+    "typecheck:web": "tsc --noEmit -p tsconfig.web.json --composite false",
+    "typecheck": "npm run typecheck:node && npm run typecheck:web"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "electron": "^44.10.2",
+    "electron-vite": "^5.0.0",
+    "typescript": "^7.0.2",
+    "vite": "^7.3.7"
+  }
+}
